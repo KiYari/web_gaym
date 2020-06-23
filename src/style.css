@@ -1,0 +1,30 @@
+canvas {
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.buttons {
+    padding: 10px;
+    margin-left: 16%;
+    margin-right: 35%;
+    margin-top: 1%;
+}
+
+.tbl {
+    padding-left: 1%;
+    padding-top: 100px;
+}
+
+table {
+    color: white;
+}
+
+.exp {
+    font-size: 50px;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+.points {
+    padding-right: 5px;
+}

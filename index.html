@@ -1,0 +1,31 @@
+<html lang="ru">
+	<head>
+	<title>JS Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="src/style.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+	<style type="text/css">
+		canvas { border: 1px solid white; }
+	</style>
+
+	</head>
+
+	<body onload="init();" class="bg-warning">
+	<div class="buttons align-center">
+			<h2 class="points">Score</h2>
+			<h3 class="exp" id="exp"></h3>
+			<input class="btn btn-success" id="start" onclick="start()" type="button" class="btn" value="Start">
+			<input class="btn btn-success" type="button" onclick="pause()" class="btn" value="Stop">
+			<input class="btn btn-success" type="button" class="btn" onclick="restart()" value="Restart">
+			<a href="#table"><input class="btn btn-success" type="button" class="btn" onclick="display_table()" value="Rating Table"></a>
+			<input class="btn btn-success" type="button" class="btn" value="Change nickname" onclick="change_name()">
+		</div>
+		<canvas id="canvas" width="1024" height="524" onclick="goInput(event);" onmousemove="rotate_cannon(event);">\
+		</canvas>
+		<div id="table" class="table text-white tbl" align="center"></div>
+		<script src="src/game.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>
